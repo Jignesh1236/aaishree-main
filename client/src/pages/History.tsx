@@ -27,7 +27,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
-const logoUrl = "/attached_assets/adsc-logo.png";
+const logoUrl = "/public/adsc-logo-alt.png";
 
 export default function History() {
   const { toast } = useToast();

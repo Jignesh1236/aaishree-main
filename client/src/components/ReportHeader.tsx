@@ -2,7 +2,7 @@ interface ReportHeaderProps {
   date: string;
 }
 
-const logoUrl = "/attached_assets/adsc-logo.png";
+const logoUrl = "/public/adsc-logo-alt.png";
 
 export default function ReportHeader({ date }: ReportHeaderProps) {
   return (
@@ -11,7 +11,7 @@ export default function ReportHeader({ date }: ReportHeaderProps) {
         <div className="flex items-center gap-4">
           <img src={logoUrl} alt="ADSC Logo" className="h-14 w-auto print:h-16" data-testid="img-logo" />
         </div>
-        
+
         <div className="flex-1 text-center">
           <h1 className="text-2xl font-bold text-foreground print:text-black print:text-3xl print:mb-1" data-testid="text-company-name">
             Aaishree Data Service Center
@@ -20,7 +20,7 @@ export default function ReportHeader({ date }: ReportHeaderProps) {
             Daily Business Report
           </p>
         </div>
-        
+
         <div className="text-right print:border-l print:border-gray-400 print:pl-4">
           <p className="text-xs font-medium text-muted-foreground print:text-gray-600 print:text-sm">Report Date</p>
           <p className="text-base font-semibold text-foreground print:text-black print:text-base print:font-semibold print:mt-1" data-testid="text-report-date">
